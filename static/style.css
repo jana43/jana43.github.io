@@ -1,0 +1,52 @@
+* {
+    margin: 0;
+    padding: 0;
+  }
+
+.nav{
+    display: flex;
+    flex-direction: row;
+    height: 90px;
+    align-items: center;
+    background-color: yellow;
+    justify-content: space-between;
+    color: green;
+    
+}
+
+.logo{
+    font-size: 35px;
+    padding-left: 10px;
+    letter-spacing: 2px;
+    text-transform: uppercase;
+    font-style: italic;
+}
+
+.link a{
+    text-transform: uppercase;
+    letter-spacing: 1px;
+    font-size: 18px;
+    font-style: italic;
+    padding-right: 30px;
+    text-decoration: none;
+    color: green;
+}
+
+.content{
+    text-align: center;
+    background-color: green;
+    
+}
+
+h1{
+    color: yellow;
+    padding-top: 200px;
+    padding-bottom: 200px;
+}
+
+.para {
+    color: red;
+    background-color: yellow;
+    padding: 20px;
+    margin: 20px;
+}
