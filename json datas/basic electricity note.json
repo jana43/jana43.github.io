@@ -1,0 +1,125 @@
+[
+    {
+        "data": "a proton is a positively charged particle having mass 1837 times that of an electron"
+    },
+    {
+        "data": "A neutron has the same mass as the proton"
+    },
+    {
+        "data": "If the number of protons is equal to the number of electrons , the resultant charge is zero and the body will be electrically neutral."
+    },
+    {
+        "data": "1 Coulomb = charge on 6.25 \u02df 10 ^16 electrons"
+    },
+    {
+        "data": "The flow of free electrons in definite directions is called electric current"
+    },
+    {
+        "data": "I = q/t , here q is the charge flowing through any cross section of the wire and t is the time"
+    },
+    {
+        "data": "The SI unit of electric current is Ampere"
+    },
+    {
+        "data": "If any cross section of the wire one Coloumb charge is flowing through it in one second , then we can say that one Ampere current is flowing through that wire."
+    },
+    {
+        "data": "If n electrons are passing through any cross section of the wire in time t , then I = q/t = ne/t , here e = -1.6 X 10 ^ -19 Coulomb"
+    },
+    {
+        "data": "Electrical potential (v) = Electrical Potential Energy (W) / Charge (Q)"
+    },
+    {
+        "data": "When a body is charged , work is done in charging the body  , the work done is stored in the body in the form of electrical potential energy"
+    },
+    {
+        "data": "The SI unit of electrical potential is , W/Q = J/C = volt , volt"
+    },
+    {
+        "data": "Two bodies A and B has potential of 5v and 3v , if these two bodies are connected through a conductor the current will flow from B to A."
+    },
+    {
+        "data": "A device that maintain the potential difference between two points is said to be develop electromotive force."
+    },
+    {
+        "data": "The emf of a device , say a battery , is a measured of the energy the battery gives to each coloumb charge"
+    },
+    {
+        "data": "If a battery supply 4 Joules of energy per Coloumb charge , then we can say that the battery has emf of 4 volts."
+    },
+    {
+        "data": "Potential difference is the workdone to move a one Coulomb charge from a point to another ."
+    },
+    {
+        "data": "If the potential difference between two points is 2 volts , it means that each Coloumb will gave up the energy of 2 Joules for moving from a point to another."
+    },
+    {
+        "data": "Thus potential difference causes current to flow while an e.m.f maintains the potential difference."
+    },
+    {
+        "data": "The relationship between voltage across and current through a conductor was first discovered by German scientist George Simon Ohm. This relationship 1s called Ohm\u2019s law ."
+    },
+    {
+        "data": "I \u221dV  , or V/I = R , where R is a constant and it is called the resistance of the conductor"
+    },
+    {
+        "data": "Resistance is an opposition to the flow of current. If the resistance of the circuit is doubled, the current is reduced to one half. If the resistance is tripled, the current is reduced to one-third and so on."
+    },
+    {
+        "data": "The SI unit of the resistance is volt/ampere = ohm (\u2126)"
+    },
+    {
+        "data": "A conductor is said to have resistance of 1 \u2126 , if a potential diference of 1v accross its end causes a current of 1 Ampere flow through it ."
+    },
+    {
+        "data": "A rheostat is an adjustable resistor ."
+    },
+    {
+        "data": "The resistance R of a material of length I and cross section A is given by : R = \u03c1.I/A , where \u03c1 is the resistivity and specific resistance , which depends upon the nature of the material and temperature ."
+    },
+    {
+        "data": "The SI unit of resistivity is ohm-metre ( \u2126m)"
+    },
+    {
+        "data": "Resitivity of copper is 1.7 \u00d7 10^-18 \u2126m means that if you take a copper wire of 1m long and it has a cross section area of 1 m2 , then the resistance of the copper wire will be 1.7 \u00d7 10^-18 \u2126 ."
+    },
+    {
+        "data": "The reciprocal of resistance of a conductor is called its conductance (G)"
+    },
+    {
+        "data": "If a conductor has a resistance of R , then its conductance G is given by G = 1/R"
+    },
+    {
+        "data": "The SI unit of the conductance is simen . It is denoted by the symbol S."
+    },
+    {
+        "data": "Suppose a wire has a resistance of 0.5 \u2126 then its conductance will be 1/0.5 = 2 S."
+    },
+    {
+        "data": "The reciprocal of resistivity of a conductor is called its conductivity . It is denoted by \u03c3 ( sigma )"
+    },
+    {
+        "data": "The SI unit of resistivity is siemen per metre , Sm^-1"
+    },
+    {
+        "data": "A component whose function in a circuit is to provide a specified value of resistance is called a resistor"
+    },
+    {
+        "data": "The most commonly used resistors in electrical and electronic circuits are the carbon resistors."
+    },
+    {
+        "data": "A carbon resistor is made from powdered carbon mixed with a binding material and baked into a small tube with a wire attached to each end ."
+    },
+    {
+        "data": "Note that the power rating of a carbon resistor depends upon the physical size of the resistor. A larger resistor is able to throw off (dissipate) more heat than a smaller one."
+    },
+    {
+        "data": "Colour code for resistance values are Black : 0 , Brown : 1 , Red : 2 , Orange : 3 , Yellow : 4, Green : 5 , Blue : 5 , Violet : 6 , Gray : 7 , White : 8"
+    },
+    {
+        "data": "Colour code for tolarance in resistor Gold : \u00b15% , Silver : \u00b1 10% , No colour :  \u00b120%"
+    },
+    {
+        "data": "Suppose the first three colour band of a resistance is red , brown , orange , The the value of resistance will be red\u2019s 2 , brown\u2019s 1 and orange\u2019s 3 will be replace to three 0 so the value will be 21000 \u2126"
+    }
+]

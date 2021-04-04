@@ -1,31 +1,124 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel = "stylesheet" href = "static/style.css" />
+    <link rel="stylesheet" href="static/style.css" />
     <title>jana43</title>
 </head>
-<body>
+
+<body onresize="resize()">
     <div class="nav">
-        <div class="logo">
-            jana43
+        <div class="hamberger">
+            <div class="logo">
+                jana43
+
+            </div>
+            <span class="hami" onclick="showHide()">
+                <div class="hambox">
+
+                </div>
+                <div class="hambox">
+
+                </div>
+                <div class="hambox">
+
+                </div>
+            </span>
         </div>
-        <div class="link">
-            <a href = "#">home</a>
-            <a href = "#">softwares</a>
-            <a href = "#">about & contact</a>
+        <div class="link" >
+            <a href="index.html">home</a>
+            <a href="#">softwares & app</a>
+            <a href="#">contact</a>
         </div>
     </div>
 
     <div class="content">
-        <h1>this page is under construction</h1>
-        <div class="para">
-            <p>
-            Lorem ipsum dolor sit amet consectetur adipisicing elit. Doloribus blanditiis libero culpa corrupti qui mollitia dolor, officiis, quia, vitae consectetur esse veniam nihil?
-        </p>
+        <div class="logoinbody">
+            <p>welcome to jana43</p>   
         </div>
+
+        <div class="cardlist">
+            <div class="card">
+                <div class="title">
+                    explore my hand tools 
+                </div>
+               
+                <div class="item">
+                    <a href = "#">Lorem ipsum, dolor sit</a>
+                </div>
+                <div class="item">
+                    <a href = "#">Lorem ipsum, dolor sit</a>
+                </div>
+                <div class="item">
+                    <a href = "#">Lorem ipsum, dolor sit</a>
+                </div>
+            </div>
+            <div class="card">
+                <div class="title">
+                    some json documentations
+                </div>
+                <div class="item">
+                    <a href = "mcqjson.html">mcq related json data</a>
+                </div>
+                <div class="item">
+                    <a href = "theoryjson.html">theory related json data</a>
+                </div>
+                <div class="item">
+                    <a href = "mcqjson.html">project related json data</a>
+                </div>
+                <div class="item">
+                    <a href = "mcqjson.html">coding doc related json data</a>
+                </div>
+                
+            </div>
+            <div class="card">
+                <div class="title">
+                    explore project documentation
+                </div>
+                <div class="item">
+                    <a href = "#">Lorem ipsum, dolor sit</a>
+                </div>
+                <div class="item">
+                    <a href = "#">Lorem ipsum, dolor sit</a>
+                </div>
+                <div class="item">
+                    <a href = "#">Lorem ipsum, dolor sit</a>
+                </div>
+                <div class="item">
+                    <a href = "#">Lorem ipsum, dolor sit</a>
+                </div>
+            </div>
+           
+        </div>
+        <div class="footer">
+            <div class="footertitle">
+                <p>jana43</p>
+                <div class="other">
+                    a opensource contributor
+                </div>
+                <div class="socialmedia">
+                    <a href="https://facebook.com">
+                        <img src = "static/facebook.ico"/>
+                    </a>
+                    <a href="https://instagram.com">
+                        <img src = "static/insta.ico"/>
+                    </a>
+                    <a href="https://gmail.com">
+                        <img src = "static/gmail.ico"/>
+                    </a>
+                    <a href="https://youtube.com">
+                        <img src = "static/youtube.ico"/>
+                    </a>
+                </div>
+            </div>
+            
+        </div>
+       
     </div>
+    <script src="static/script.js"></script>
 </body>
+
 </html>
