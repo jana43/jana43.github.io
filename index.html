@@ -1,168 +1,231 @@
 <!DOCTYPE html>
 <html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="static/style.css" />
+    <link
+      href="https://fonts.googleapis.com/icon?family=Material+Icons"
+      rel="stylesheet"
+    />
+    <title>Jana43</title>
+  </head>
 
-<head>
-  <meta charset="UTF-8">
-  <meta http-equiv="X-UA-Compatible" content="IE=edge">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <link rel="stylesheet" href="static/style.css" />
-  <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
-  <title>Jana43</title>
-</head>
+  <body>
+    <nav id="navbar">
+      <div class="nav-title">
+        <img src="images/bitmap.png" />
+        Jana43
+      </div>
+      <div class="nav-links">
+        <a href="#">Home</a>
+        <a href="#skills">Skills</a>
+        <a href="#projects">Projects</a>
+        <a href="#">Contact</a>
+      </div>
+      <div class="toggle-button" onclick="showNav()">
+        <i class="material-icons toggle">reorder</i>
+      </div>
+    </nav>
 
-<body>
-  <nav id="navbar">
-    <div class="nav-title">
-      <img src="images/bitmap.png" />
-      Jana43  
-    </div>
-    <div class="nav-links">
-      <a href="#">Home</a>
-      <a href="#skills">Skills</a>
-      <a href="#projects">Projects</a>
-      <a href="#">Contact</a>
-    </div>
-    <div class="toggle-button" onclick="showNav()">
-      <i class="material-icons toggle">reorder</i>
-    </div>
-  </nav>
+    <div class="profile-info">
+      <div class="profile-pic">
+        <img src="images/bitmap.png" />
+      </div>
+      <div class="contact-info">
+        <p>
+          Hi ! I am Soumya Jana . I am a programmer and I love to write any
+          codes and autamate things by python . Welcome to my github page .
+        </p>
 
-  <div class="profile-info">
-    <!-- <div class="profile-pic">
-     
-    </div> -->
-    <div class="contact-info">
-      <p>Hi ! I am Soumya Jana . I am a programmer and I love to write any codes and autamate things by python . Welcome
-        to my github page . </p>
-
-      <!-- <div class="emails" id="skills">
+        <!-- <div class="emails" id="skills">
         <div><b>Email:- </b>janasoumya77@gmail.com</div>
         <div><b>Phone:- </b>+918116803951</div>
       </div> -->
-      <div class="skills">
-        <a href="#">MERN stack</a>
-        <a href="#">Django</a>
-        <a href="#">Codings</a>
+        <div class="skills">
+          <a href="#mern-stack">MERN</a>
+          <a href="#Django">Django</a>
+          <a href="#">Codings</a>
+          
+        </div>
       </div>
     </div>
-    
-    
-  </div>
-  <h2 class="label" id="projects">projects</h2>
- 
+    <div class="framework-container">
+      <div id="mern-stack" class="frameworks">
+        <h2>MERN Stack development</h2>
+        <div class="project-icons">
+          <div class="project-data">
+            <i class="fas fa-info"></i>&nbsp;
+            <span>This is the title of the project number 1</span>
+          </div>
+          <div class="project-data">
+            <i class="fas fa-question-circle"></i>&nbsp;
+            <span
+              >This is the description of the project number 1 Lorem ipsum dolor
+              sit amet, consectetur adipisicing elit. Adipisci illo quo animi
+              voluptate error aliquam praesentium voluptatem sit aut dolore quia
+              ad nisi a porro, enim fuga debitis beatae asperiores?</span
+            >
+          </div>
+          <a href="#"><i class="fas fa-link"></i> no project link</a>
+        </div>
+        <h3>Some importent links according to project</h3>
+        <a href="#"><i class="fas fa-link"></i> no project link</a>
+        <a href="#"><i class="fas fa-link"></i> no project link</a>
+        <a href="#"><i class="fas fa-link"></i> no project link</a>
+        <a href="#"><i class="fas fa-link"></i> no project link</a>
+        <a href="#"><i class="fas fa-link"></i> no project link</a>
+      </div>
 
-  <div class="projects-container">
-    <div class="project">
-      <div class="project-img">
-        <img src="images/background.jpg" alt="">
+      <div id="Django" class="frameworks">
+        <h2>Django development</h2>
+        <div class="project-icons">
+          <div class="project-data">
+            <i class="fas fa-info"></i>&nbsp;
+            <span>Reselling comunity website</span>
+          </div>
+          <div class="project-data">
+            <i class="fas fa-question-circle"></i>&nbsp;
+            <span
+              >This is a resselling community website , it is basically a e commerce template where user can sell their old project . Okay don't worry about it if someone want to modify this site they can easily do that . This site allow user to perform CURD operations.</span
+            >
+          </div>
+          <a href="https://github.com/jana43/reselling-comunity-website"><i class="fas fa-link"></i>  github source code</a>
+        </div>
+        <h3>Some importent links according to project</h3>
+        
       </div>
-      <div class="project-title">
-        project number 1
+
+      <div id="mern-stack" class="frameworks">
+        <h2>MERN Stack development</h2>
+        <div class="project-icons">
+          <div class="project-data">
+            <i class="fas fa-info"></i>&nbsp;
+            <span>This is the title of the project number 1</span>
+          </div>
+          <div class="project-data">
+            <i class="fas fa-question-circle"></i>&nbsp;
+            <span
+              >This is the description of the project number 1 Lorem ipsum dolor
+              sit amet, consectetur adipisicing elit. Adipisci illo quo animi
+              voluptate error aliquam praesentium voluptatem sit aut dolore quia
+              ad nisi a porro, enim fuga debitis beatae asperiores?</span
+            >
+          </div>
+          <a href="#"><i class="fas fa-link"></i> no project link</a>
+        </div>
+        <h3>Some importent links according to project</h3>
+        <a href="#"><i class="fas fa-link"></i>  no project link</a>
+        <a href="#"><i class="fas fa-link"></i>  no project link</a>
+        <a href="#"><i class="fas fa-link"></i>  no project link</a>
+        <a href="#"><i class="fas fa-link"></i>  no project link</a>
+        <a href="#"><i class="fas fa-link"></i>  no project link</a>
       </div>
-      <div class="project-description">
-        Lorem ipsum dolor sit, amet consectetur adipisicing elit. Debitis ipsa ducimus ab facilis perferendis nesciunt
-        natus adipisci corporis
+
+      
+
+      
+    </div>
+
+    <h2 class="label" id="projects">projects</h2>
+
+    <div class="projects-container">
+      <div class="project">
+        <div class="project-img">
+          <img src="images/background.jpg" alt="" />
+        </div>
+        <div class="project-title">project number 1</div>
+        <div class="project-description">
+          Lorem ipsum dolor sit, amet consectetur adipisicing elit. Debitis ipsa
+          ducimus ab facilis perferendis nesciunt natus adipisci corporis
+        </div>
+        <div class="project-links">
+          <a href="#">read more</a>
+          <a href="#">view github</a>
+        </div>
       </div>
-      <div class="project-links">
-        <a href="#">read more</a>
-        <a href="#">view github</a>
+
+      <div class="project">
+        <div class="project-img">
+          <img src="images/background.jpg" alt="" />
+        </div>
+        <div class="project-title">project number 1</div>
+        <div class="project-description">
+          Lorem ipsum dolor sit, amet consectetur adipisicing elit. Debitis ipsa
+          ducimus ab facilis perferendis nesciunt natus adipisci corporis
+        </div>
+        <div class="project-links">
+          <a href="#">read more</a>
+          <a href="#">view github</a>
+        </div>
+      </div>
+
+      <div class="project">
+        <div class="project-img">
+          <img src="images/background.jpg" alt="" />
+        </div>
+        <div class="project-title">project number 1</div>
+        <div class="project-description">
+          Lorem ipsum dolor sit, amet consectetur adipisicing elit. Debitis ipsa
+          ducimus ab facilis perferendis nesciunt natus adipisci corporis
+        </div>
+        <div class="project-links">
+          <a href="#">read more</a>
+          <a href="#">view github</a>
+        </div>
+      </div>
+
+      <div class="project">
+        <div class="project-img">
+          <img src="images/background.jpg" alt="" />
+        </div>
+        <div class="project-title">project number 1</div>
+        <div class="project-description">
+          Lorem ipsum dolor sit, amet consectetur adipisicing elit. Debitis ipsa
+          ducimus ab facilis perferendis nesciunt natus adipisci corporis
+        </div>
+        <div class="project-links">
+          <a href="#">read more</a>
+          <a href="#">view github</a>
+        </div>
+      </div>
+
+      <div class="project">
+        <div class="project-img">
+          <img src="images/background.jpg" alt="" />
+        </div>
+        <div class="project-title">project number 1</div>
+        <div class="project-description">
+          Lorem ipsum dolor sit, amet consectetur adipisicing elit. Debitis ipsa
+          ducimus ab facilis perferendis nesciunt natus adipisci corporis
+        </div>
+        <div class="project-links">
+          <a href="#">read more</a>
+          <a href="#">view github</a>
+        </div>
+      </div>
+
+      <div class="project">
+        <div class="project-img">
+          <img src="images/background.jpg" alt="" />
+        </div>
+        <div class="project-title">project number 1</div>
+        <div class="project-description">
+          Lorem ipsum dolor sit, amet consectetur adipisicing elit. Debitis ipsa
+          ducimus ab facilis perferendis nesciunt natus adipisci corporis
+        </div>
+        <div class="project-links">
+          <a href="#">read more</a>
+          <a href="#">view github</a>
+        </div>
       </div>
     </div>
 
-    <div class="project">
-      <div class="project-img">
-        <img src="images/background.jpg" alt="">
-      </div>
-      <div class="project-title">
-        project number 1
-      </div>
-      <div class="project-description">
-        Lorem ipsum dolor sit, amet consectetur adipisicing elit. Debitis ipsa ducimus ab facilis perferendis nesciunt
-        natus adipisci corporis
-      </div>
-      <div class="project-links">
-        <a href="#">read more</a>
-        <a href="#">view github</a>
-      </div>
-    </div>
-
-    <div class="project">
-      <div class="project-img">
-        <img src="images/background.jpg" alt="">
-      </div>
-      <div class="project-title">
-        project number 1
-      </div>
-      <div class="project-description">
-        Lorem ipsum dolor sit, amet consectetur adipisicing elit. Debitis ipsa ducimus ab facilis perferendis nesciunt
-        natus adipisci corporis
-      </div>
-      <div class="project-links">
-        <a href="#">read more</a>
-        <a href="#">view github</a>
-      </div>
-    </div>
-
-    <div class="project">
-      <div class="project-img">
-        <img src="images/background.jpg" alt="">
-      </div>
-      <div class="project-title">
-        project number 1
-      </div>
-      <div class="project-description">
-        Lorem ipsum dolor sit, amet consectetur adipisicing elit. Debitis ipsa ducimus ab facilis perferendis nesciunt
-        natus adipisci corporis
-      </div>
-      <div class="project-links">
-        <a href="#">read more</a>
-        <a href="#">view github</a>
-      </div>
-    </div>
-
-    <div class="project">
-      <div class="project-img">
-        <img src="images/background.jpg" alt="">
-      </div>
-      <div class="project-title">
-        project number 1
-      </div>
-      <div class="project-description">
-        Lorem ipsum dolor sit, amet consectetur adipisicing elit. Debitis ipsa ducimus ab facilis perferendis nesciunt
-        natus adipisci corporis
-      </div>
-      <div class="project-links">
-        <a href="#">read more</a>
-        <a href="#">view github</a>
-      </div>
-    </div>
-
-    <div class="project">
-      <div class="project-img">
-        <img src="images/background.jpg" alt="">
-      </div>
-      <div class="project-title">
-        project number 1
-      </div>
-      <div class="project-description">
-        Lorem ipsum dolor sit, amet consectetur adipisicing elit. Debitis ipsa ducimus ab facilis perferendis nesciunt
-        natus adipisci corporis
-      </div>
-      <div class="project-links">
-        <a href="#">read more</a>
-        <a href="#">view github</a>
-      </div>
-    </div>
-  </div>
-
-  
-
-
-
-
-
-  <script src="script/script.js">
-  </script>
-</body>
-
+    <script
+      src="https://kit.fontawesome.com/cbf067f286.js"
+      crossorigin="anonymous"
+    ></script>
+    <script src="script/script.js"></script>
+  </body>
 </html>
