@@ -79,7 +79,6 @@ function handleCardVideoPlay(e) {
 function handleLoadImgIntersection(e,t) {
     e.forEach((e) => {
         const t = e.target;
-        console.log("************* ", t);
         e.isIntersecting ? updateImageSource(t) : null;
     });
     // document.querySelectorAll(".sj-im-lazy-load").forEach((img) => { let dataSrc = img.getAttribute("data-src"); if (dataSrc) { img.src = dataSrc } })
