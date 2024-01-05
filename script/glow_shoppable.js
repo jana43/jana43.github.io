@@ -61,7 +61,7 @@ function updateVideoSource(e) {
 function handleIntersection(e, t) {
     e.forEach((e) => {
         const t = e.target;
-        console.log("************* ", t);
+      
         e.isIntersecting ? (updateVideoSource(t), t.play()) : t.pause();
     });
 }
@@ -69,8 +69,13 @@ function handleCardVideoPlay(e) {
     let t = e.getAttribute("data-vlc");
     (document.getElementById(`${t}`).style.display = "none"), e.play();
 }
-function handleLoadImg() {
-    document.querySelectorAll(".tw-shoppable img").forEach((img) => { let dataSrc = img.getAttribute("data-src"); if (dataSrc) { img.src = dataSrc } })
+function handleLoadImgIntersection(e,t) {
+    e.forEach((e) => {
+        const t = e.target;
+        console.log("************* ", t);
+        e.isIntersecting ? (updateVideoSource(t), t.play()) : t.pause();
+    });
+    // document.querySelectorAll(".sj-im-lazy-load").forEach((img) => { let dataSrc = img.getAttribute("data-src"); if (dataSrc) { img.src = dataSrc } })
 
 }
 function handleCardVideoWaiting(e) {
@@ -78,7 +83,9 @@ function handleCardVideoWaiting(e) {
     document.getElementById(`${t}`).style.display = "flex";
 }
 const glow_observer = new IntersectionObserver(handleIntersection, { root: null, rootMargin: "0px", threshold: 0.1 }),
+const glow_observer_for_img = new IntersectionObserver(handleLoadImgIntersection, { root: null, rootMargin: "0px", threshold: 0.1 }),
     videos = document.querySelectorAll("video.tw-viewport-video[data-src]");
+    images = document.querySelectorAll("")
 videos.forEach((e) => {
     glow_observer.observe(e);
 });
