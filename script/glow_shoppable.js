@@ -82,12 +82,15 @@ function handleCardVideoWaiting(e) {
     let t = e.getAttribute("data-vlc");
     document.getElementById(`${t}`).style.display = "flex";
 }
-const glow_observer = new IntersectionObserver(handleIntersection, { root: null, rootMargin: "0px", threshold: 0.1 }),
-const glow_observer_for_img = new IntersectionObserver(handleLoadImgIntersection, { root: null, rootMargin: "0px", threshold: 0.1 }),
-    videos = document.querySelectorAll("video.tw-viewport-video[data-src]");
-    images = document.querySelectorAll("")
-videos.forEach((e) => {
+const glow_observer = new IntersectionObserver(handleIntersection, { root: null, rootMargin: "0px", threshold: 0.1 });
+const glow_observer_for_img = new IntersectionObserver(handleLoadImgIntersection, { root: null, rootMargin: "0px", threshold: 0.1 });
+let glow_videos = document.querySelectorAll("video.tw-viewport-video[data-src]");
+let glow_images = document.querySelectorAll(".sj-im-lazy-load");
+glow_videos.forEach((e) => {
     glow_observer.observe(e);
+});
+glow_images.forEach((e) => {
+    glow_observer_for_img.observe(e);
 });
 let swiperDesktop = [],
     swiperMobile = [];
