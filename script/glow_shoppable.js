@@ -58,6 +58,13 @@ function updateVideoSource(e) {
         t.getAttribute("src") !== t.getAttribute("data-src") && ((t.src = t.getAttribute("data-src")), e.load());
     }
 }
+
+function updateImageSource(e){
+    const t = e;
+    if (t && t.getAttribute("data-src")) {
+        t.getAttribute("src") !== t.getAttribute("data-src") && ((t.src = t.getAttribute("data-src")));
+    }
+}
 function handleIntersection(e, t) {
     e.forEach((e) => {
         const t = e.target;
@@ -73,7 +80,7 @@ function handleLoadImgIntersection(e,t) {
     e.forEach((e) => {
         const t = e.target;
         console.log("************* ", t);
-        e.isIntersecting ? (updateVideoSource(t), t.play()) : t.pause();
+        e.isIntersecting ? updateImageSource(t) : null;
     });
     // document.querySelectorAll(".sj-im-lazy-load").forEach((img) => { let dataSrc = img.getAttribute("data-src"); if (dataSrc) { img.src = dataSrc } })
 
