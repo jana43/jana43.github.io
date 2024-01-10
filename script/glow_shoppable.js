@@ -129,6 +129,17 @@ function handleIntersection(entries, observer) {
     }
   });
 }
+function handleIntersectionImg(entries,observer){
+    entries.forEach((entry) => {
+        const img = entry.target;
+        if (entry.isIntersecting) {
+            let src = img.getAttribute("data-src");
+            if(src){
+                img.src=src
+            }
+        } 
+      });
+}
 function handleCardVideoPlay(vid) {
   let loader_element_id = vid.getAttribute("data-vlc");
   let loader_element = document.getElementById(`${loader_element_id}`);
@@ -145,10 +156,20 @@ const glow_observer = new IntersectionObserver(handleIntersection, {
   rootMargin: "0px",
   threshold: 0.1,
 });
+
+const glow_observer_img = new IntersectionObserver(handleIntersectionImg, {
+    root: null,
+    rootMargin: "0px",
+    threshold: 0.1,
+  });
 const videos = document.querySelectorAll("video.tw-viewport-video[data-src]");
 videos.forEach((video) => {
   glow_observer.observe(video);
 });
+const images = document.querySelectorAll(".sj-im-lazy-load");
+images.forEach((image) => {
+    glow_observer_img.observe(image);
+  });
 let swiperDesktop = [];
 let swiperMobile = [];
 const swiperDesktopSliders = document.querySelectorAll(".swiper-slider");
