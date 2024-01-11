@@ -115,10 +115,7 @@ async function injectDesktopModal(all_medias, playlist, block_id) {
                                                             ${tag?.text }
                                                         </p>
                                                     </div>
-                                                    
-                                                        ${fetchProductCode(products)}
-                                            
-           
+                                                    <noscript id="product_handle">${products}</noscript>
                                                     <div class="product-add-notify">
                                                         <p>Product Added To Cart</p>
                                                     </div>
