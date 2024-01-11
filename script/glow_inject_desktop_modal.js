@@ -167,6 +167,7 @@ function fetchProductCode(products){
 
 
 async function fetchProductDetailsGlow(active_slide,block_id, media_id) {
+    console.log("INSERTING THE PRODUCTS")
     let product_handles_txt = active_slide.querySelector(`#glow_product_handle`).innerText;
     let product_handles = product_handles_txt.split(",");
     let promise_list = [];
@@ -191,6 +192,10 @@ async function fetchProductDetailsGlow(active_slide,block_id, media_id) {
     for (let i =0; i < products.length; i++){
         html += returnProductWrapperHTML(products[i],block_id, media_id)
     }
+
+    active_slide.querySelector(".glow_product_detail_desk").innerHTML = html;
+
+
 }
 
 function modifyImageUrlGlow(originalUrl) {
