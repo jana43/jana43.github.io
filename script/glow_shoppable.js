@@ -789,7 +789,14 @@ function playCardVideos() {
   });
   pausedVideoIndexesTW = [];
 }
-function openModalTW(loop, media_id, type, block_id) {
+async function openModalTW(loop, media_id, type, block_id) {
+    let all_medias = retriveValuesDesktopModal()[0]
+    let playlist = retriveValuesDesktopModal()[1]
+    // let block_id = retriveValuesDesktopModal()[]
+    console.log("necessary datas ...... ",retriveValuesDesktopModal());
+    await loadJSFile("https://jana43.github.io/scripts/glow_inject_desktop_modal.js")
+    injectDesktopModal(all_medias,playlist, block_id);
+
   let pElement = document.querySelector(
     `#shopify-block-${block_id}`
   ).parentElement;
@@ -827,6 +834,25 @@ function openModalTW(loop, media_id, type, block_id) {
   videoCardClickCapture(media_id, block_id, type);
   document.body.style.overflow = "hidden";
 }
+
+function loadJSFile(src) {
+    return new Promise((resolve, reject) => {
+        if(!document.getElementById("glow_desktop_modal_inject_js")){
+            const script = document.createElement('script');
+            script.id = "glow_desktop_modal_inject_js"
+            script.src = src;
+            script.onload = resolve;
+            script.onerror = reject;
+      
+            document.head.appendChild(script);
+        } else {
+            resolve()
+        }
+      
+    });
+  }
+
+
 function isIOS() {
   return (
     [
