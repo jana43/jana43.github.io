@@ -153,15 +153,9 @@ async function injectDesktopModal(all_medias, playlist, block_id) {
 
 
 async function fetchProductCode(products){
-
-    let html = `[`
+    let html = ``;
     products?.forEach(product => {
         html += `${product.handle},`
     });
-    html +=']'
-
-
-   
-
-        return html
+    return html;
 }
