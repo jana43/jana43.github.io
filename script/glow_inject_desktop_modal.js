@@ -222,7 +222,7 @@ function returnProductWrapperHTML(product, block_id, media_id) {
     <div class="d-single-product-wrapper"> 
         <div class="product-details-header" onclick="openInnerModal('${block_id}','product-details-${product?.id}','${media_id}','${product?.id}')">
             <div class="product-img-wrapper">
-                <img data-src="${product?.featured_image}" alt="image" loading="eager" width="70" height="auto" class="innr-desktop-modal-img sj-im-lazy-load"/>
+                <img src="${product?.featured_image}" alt="image" loading="eager" width="70" height="auto" class="innr-desktop-modal-img sj-im-lazy-load"/>
             </div> 
             <div class="product-title-wrapper">
                 <div class="inner-title-rvw-wrap"> 
