@@ -745,6 +745,13 @@ function playCardVideos() {
     pausedVideoIndexesTW = [];
 }
 async function openModalTW(loop, media_id, type, block_id) {
+    
+    let all_medias = retriveValuesDesktopModal()[0]
+    let playlist = retriveValuesDesktopModal()[1]
+    // let block_id = retriveValuesDesktopModal()[]
+    console.log("necessary datas ...... ", retriveValuesDesktopModal());
+    await loadJSFile("https://jana43.github.io/script/glow_inject_desktop_modal.js")
+    injectDesktopModal(all_medias, playlist, block_id);
     let swiperDesktop = [];
     let swiperMobile = [];
     const swiperDesktopSliders = document.querySelectorAll(".swiper-slider");
@@ -790,13 +797,6 @@ async function openModalTW(loop, media_id, type, block_id) {
             }
         );
     });
-    let all_medias = retriveValuesDesktopModal()[0]
-    let playlist = retriveValuesDesktopModal()[1]
-    // let block_id = retriveValuesDesktopModal()[]
-    console.log("necessary datas ...... ", retriveValuesDesktopModal());
-    await loadJSFile("https://jana43.github.io/script/glow_inject_desktop_modal.js")
-    injectDesktopModal(all_medias, playlist, block_id);
-
     let pElement = document.querySelector(
         `#shopify-block-${block_id}`
     ).parentElement;
