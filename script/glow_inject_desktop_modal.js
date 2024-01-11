@@ -171,8 +171,10 @@ async function fetchProductDetailsGlow(active_slide) {
     let product_handles = product_handles_txt.split(",");
     let promise_list = [];
     
-    product_handles.forEach(product_handle => {
+    product_handles.forEach((product_handle) => {
+        console.log(product_handle);
         product_handle = product_handle.replace(/ /g, '');
+        console.log("............ ", product_handle);
         if (product_handle) {
             promise_list.push(fetch(`/products/${product_handle}.js`).then(resp => resp.json()));
         }
