@@ -175,7 +175,7 @@ async function fetchProductDetailsGlow(active_slide) {
         console.log(product_handle);
         product_handle = product_handle.replace(/ /g, '');
         console.log("............ ", product_handle);
-        if (product_handle != "") {
+        if (product_handle !== "") {
             promise_list.push(fetch(`/products/${product_handle}.js`).then(resp => resp.json()));
         }
     });
