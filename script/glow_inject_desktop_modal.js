@@ -3,7 +3,9 @@ async function injectDesktopModal(all_medias, playlist, block_id) {
     let status = playlist?.status;
     let playlist_medias = playlist?.media;
     let playlist_id = playlist?.id;
-   
+
+
+    console.log(">>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>> ",playlist_medias,playlist_id)
 
     let html = `
     <div class="card-modal">
