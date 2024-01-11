@@ -38,7 +38,7 @@ async function injectDesktopModal(all_medias, playlist, block_id) {
         let media = all_medias[playlist_medias[i]];
         let media_id = media.id;
         let video_url = media.previewVideoCDNURLs[0];
-        if(video_url.include("m3u8")){
+        if(video_url.includes("m3u8")){
             video_url = media.previewVideoCDNURLs[0];
         }
         let tag = media.tags[0];
