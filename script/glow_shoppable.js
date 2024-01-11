@@ -794,7 +794,7 @@ async function openModalTW(loop, media_id, type, block_id) {
     let playlist = retriveValuesDesktopModal()[1]
     // let block_id = retriveValuesDesktopModal()[]
     console.log("necessary datas ...... ",retriveValuesDesktopModal());
-    await loadJSFile("https://jana43.github.io/scripts/glow_inject_desktop_modal.js")
+    await loadJSFile("https://jana43.github.io/script/glow_inject_desktop_modal.js")
     injectDesktopModal(all_medias,playlist, block_id);
 
   let pElement = document.querySelector(
