@@ -152,10 +152,12 @@ async function injectDesktopModal(all_medias, playlist, block_id) {
 
 
 
-async function fetchProductCode(products){
+function fetchProductCode(products){
     let html = ``;
-    products?.forEach(product => {
+    for(let i = 0; i < products.length; i++){
+        let product = products[i];
         html += `${product.handle},`
-    });
+    }
+    
     return html;
 }
