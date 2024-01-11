@@ -39,14 +39,14 @@ async function injectDesktopModal(all_medias, playlist, block_id) {
     for (let i = 0; i< playlist_medias.length; i++){
         let media = all_medias[playlist_medias[i]];
         console.log("Media >>>>> ", media)
-        let media_id = media.id;
-        let video_url = media.previewVideoCDNURLs[0].url;
+        let media_id = media?.id;
+        let video_url = media?.previewVideoCDNURLs[0]?.url;
         console.log("ivdeo ur l >>>>> ", video_url);
         if(video_url.includes("m3u8")){
-            video_url = media.previewVideoCDNURLs[0].url;
+            video_url = media?.previewVideoCDNURLs[0]?.url;
         }
-        let tag = media.tags[0];
-        let products = media.products;
+        let tag = media?.tags[0];
+        let products = media?.products;
         html += ` 
                                     <div class="swiper-slide slide-count--${i} ${()=>(i==0?"sj-active-slide":null)}"
                                         data-playlist-id="${playlist_id}" data-media-id="${media_id}">
@@ -111,13 +111,13 @@ async function injectDesktopModal(all_medias, playlist, block_id) {
                                                 </div>
                                                 <div class="modal-product-wrapper desktop-view slide-count--${i}">
                                                     <div class="media-tag-wrapper">
-                                                        <p class="inner-media-tag" style="background-color:${tag.bgColor}; color:${tag.fgColor};">
-                                                            {{ tag.text }}
+                                                        <p class="inner-media-tag" style="background-color:${tag?.bgColor}; color:${tag?.fgColor};">
+                                                            ${tag?.text }
                                                         </p>
                                                     </div>
-                                                    {% for item in mediaObject.products %}
+                                                    
                                                         ${fetchProductCode(products)}
-                                                    {% endfor %}
+                                            
            
                                                     <div class="product-add-notify">
                                                         <p>Product Added To Cart</p>
