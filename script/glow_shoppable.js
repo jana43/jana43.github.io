@@ -817,6 +817,7 @@ async function openModalTW(loop, media_id, type, block_id) {
         handleVideoPlayback(currentIndex, swiper_nodez);
         validateViews(currentIndex, swiper_nodez, block_id);
         setCurrentMediaPlaylistID(currentIndex, swiper_nodez);
+        fetchProductDetailsGlow(swiper_nodez);
     } else {
         let modalID = document
             .querySelector(`#shopify-block-${block_id}`)
