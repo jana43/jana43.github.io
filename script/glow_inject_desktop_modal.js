@@ -145,7 +145,7 @@ async function injectDesktopModal(all_medias, playlist, block_id) {
         </div>
     </div>`
 
-    document.querySelector(`desk-modal-${block_id}`).innerHTML = html;
+    document.querySelector(`.desk-modal-${block_id}`).innerHTML = html;
 
 }
 
