@@ -2,6 +2,25 @@ let origin = "https://oracle-obesity-family-bachelor.trycloudflare.com";
 let analytics_unique_id_global = 0;
 let plan_data;
 let user_interactions = [];
+let page = window.location.href;
+let shop = Shopify.shop;
+let anonymous_id = localStorage.getItem("anonymousIdTWS");
+let customer_id = localStorage.getItem("customerIdTWS");
+let session = getItemWithExpiry("twsSession");
+let currentMediaID = null;
+let currentPlaylistId = null;
+const currentDate = new Date();
+const isoString = currentDate.toISOString();
+let session_obj = { session: session, time_stamp: isoString };
+const parentSelector = ".shopify-section";
+let global_element = document.querySelector(".tws-playlist-wrapper-desktop");
+let global_playListId = global_element?.getAttribute("data-playlist-id");
+let currentIntervalId = 23432;
+let sendMediaId;
+let sendWatchtime;
+let sendViews;
+let offerviewsr = 0;
+
 function openModalOnVisiting() {
     var url = window.location.href;
     var urlParams = new URLSearchParams(url.split("?")[1]);
@@ -246,24 +265,7 @@ function showToast(text) {
         onClick: function () { },
     }).showToast();
 }
-let page = window.location.href;
-let shop = Shopify.shop;
-let anonymous_id = localStorage.getItem("anonymousIdTWS");
-let customer_id = localStorage.getItem("customerIdTWS");
-let session = getItemWithExpiry("twsSession");
-let currentMediaID = null;
-let currentPlaylistId = null;
-const currentDate = new Date();
-const isoString = currentDate.toISOString();
-let session_obj = { session: session, time_stamp: isoString };
-const parentSelector = ".shopify-section";
-let global_element = document.querySelector(".tws-playlist-wrapper-desktop");
-let global_playListId = global_element?.getAttribute("data-playlist-id");
-let currentIntervalId = 23432;
-let sendMediaId;
-let sendWatchtime;
-let sendViews;
-let offerviewsr = 0;
+
 async function injectCustomer() {
     try {
         let currentAnonumousId = localStorage.getItem("anonymousIdTWS");
