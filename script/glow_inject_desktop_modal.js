@@ -361,4 +361,6 @@ function returnProductWrapperHTML(product, block_id, media_id){
                               <!-- product details modal for each product -->
                             </div>
                           {% endfor %}`
+
+    return html;
 }
