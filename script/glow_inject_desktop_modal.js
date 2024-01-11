@@ -115,9 +115,11 @@ async function injectDesktopModal(all_medias, playlist, block_id) {
                                                             ${tag?.text }
                                                         </p>
                                                     </div>
-                                                    <noscript id="product_handle">
+                                                    <noscript id="glow_product_handle">
                                                         ${fetchProductCode(products)}
                                                     </noscript>
+                                                    <div id="glow_product_detail_desk">
+                                                    </div>
                                             
            
                                                     <div class="product-add-notify">
@@ -160,4 +162,21 @@ function fetchProductCode(products){
     }
     
     return html;
+}
+
+
+
+async function fetchProductDetailsGlow(active_slide) {
+    let product_handles_txt = active_slide.querySelector(`#glow_product_handle`).innerText;
+    let product_handles = product_handles_txt.split(",");
+    let promise_list = [];
+    
+    product_handles.forEach(product_handle => {
+        if (product_handle) {
+            promise_list.push(fetch(`/products/${product_handle}.js`).then(resp => resp.json()));
+        }
+    });
+    
+    const products = await Promise.all(promise_list);
+    return products;
 }
