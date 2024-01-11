@@ -830,7 +830,7 @@ async function openModalTW(loop, media_id, type, block_id) {
         const swiper_nodez = swiperDesktop[block_id];
         handleVideoPlayback(currentIndex, swiper_nodez);
         fixHeightOnIosOnResize();
-        fetchProductDetailsGlow(swiper_nodez, block_id, media_id);
+        fetchProductDetailsGlow(swiper_nodez.slides[currentIndex], block_id, media_id);
         console.log("all set ....")
         validateViews(currentIndex, swiper_nodez, block_id);
         setCurrentMediaPlaylistID(currentIndex, swiper_nodez);
