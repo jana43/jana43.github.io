@@ -179,6 +179,8 @@ async function fetchProductDetailsGlow(active_slide) {
             promise_list.push(fetch(`/products/${product_handle}.js`).then(resp => resp.json()));
         }
     });
+
+    console.log("Promise list ", promise_list)
     
     const products = await Promise.all(promise_list);
     console.log("All the products >>>>>>>> ", products);
