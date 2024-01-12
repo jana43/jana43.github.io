@@ -747,13 +747,12 @@ function playCardVideos() {
     pausedVideoIndexesTW = [];
 }
 async function openModalTW(loop, media_id, type, block_id) {
-    
-    let all_medias = retriveValuesDesktopModal()[0]
-    let playlist = retriveValuesDesktopModal()[1]
+
+    let all_medias = retriveValuesDesktopModal(block_id)[0]
+    let playlist = retriveValuesDesktopModal(block_id)[1]
     // let block_id = retriveValuesDesktopModal()[]
-    console.log("necessary datas ...... ", retriveValuesDesktopModal());
-    await loadJSFile("https://jana43.github.io/script/glow_inject_desktop_modal.js")
-    injectDesktopModal(all_medias, playlist, block_id);
+    console.log("necessary datas ...... ", retriveValuesDesktopModal(block_id));
+
     let swiperDesktop = [];
     let swiperMobile = [];
     const swiperDesktopSliders = document.querySelectorAll(".swiper-slider");
@@ -817,8 +816,10 @@ async function openModalTW(loop, media_id, type, block_id) {
         handleVideoPlayback(currentIndex, swiper_nodez);
         validateViews(currentIndex, swiper_nodez, block_id);
         setCurrentMediaPlaylistID(currentIndex, swiper_nodez);
-        
+
     } else {
+        await loadJSFile("https://jana43.github.io/script/glow_inject_desktop_modal.js")
+        injectDesktopModal(all_medias, playlist, block_id);
         let modalID = document
             .querySelector(`#shopify-block-${block_id}`)
             .querySelector("#card-modal-desktop");
@@ -834,7 +835,7 @@ async function openModalTW(loop, media_id, type, block_id) {
         console.log("all set ....")
         validateViews(currentIndex, swiper_nodez, block_id);
         setCurrentMediaPlaylistID(currentIndex, swiper_nodez);
-       
+
     }
     pauseAllCardVideos();
     videoCardClickCapture(media_id, block_id, type);
