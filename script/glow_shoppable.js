@@ -748,10 +748,10 @@ function playCardVideos() {
 }
 async function openModalTW(loop, media_id, type, block_id) {
 
-    let all_medias = retriveValuesDesktopModal(block_id)[0]
-    let playlist = retriveValuesDesktopModal(block_id)[1]
+    let all_medias = retriveValuesDesktopModal()[0]
+    let playlist = retriveValuesDesktopModal()[1]
     // let block_id = retriveValuesDesktopModal()[]
-    console.log("necessary datas ...... ", retriveValuesDesktopModal(block_id));
+    console.log("necessary datas ...... ", retriveValuesDesktopModal());
 
     let swiperDesktop = [];
     let swiperMobile = [];
