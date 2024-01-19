@@ -1,4 +1,4 @@
-let origin = "https://oracle-obesity-family-bachelor.trycloudflare.com";
+let origin = "https://www.glowvideos.com";
 let analytics_unique_id_global = 0;
 let plan_data;
 let user_interactions = [];
@@ -1968,7 +1968,3 @@ window.addEventListener("visibilitychange", (event) => {
   storeAllAnalytics();
   showCartCount();
 });
-
-
-
-
