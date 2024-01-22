@@ -2,7 +2,8 @@ let origin = "https://www.glowvideos.com";
 let analytics_unique_id_global = 0;
 let plan_data;
 let user_interactions = [];
-function openModalOnVisiting() {
+async function openModalOnVisiting() {
+  await injectScript();
   var url = window.location.href;
   var urlParams = new URLSearchParams(url.split("?")[1]);
   var blockId = urlParams.get("block_id");
