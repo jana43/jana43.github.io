@@ -1958,13 +1958,16 @@ async function storeAllAnalytics() {
 }
 window.addEventListener("pagehide", () => {
   storeAllAnalytics();
+  user_interactions = [];
   showCartCount();
 });
 window.addEventListener("beforeunload", function (e) {
   storeAllAnalytics();
+  user_interactions = [];
   showCartCount();
 });
 window.addEventListener("visibilitychange", (event) => {
   storeAllAnalytics();
+  user_interactions = [];
   showCartCount();
 });
